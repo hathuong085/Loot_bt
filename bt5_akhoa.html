@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = +prompt('nhap so đầu tiên: ')
+        let count1 = 0;
+        for (let i = 1; i <= a / 2; i++) {
+            if (a % i == 0) {
+                count1 = count1 + i
+            }
+        }
+        b = +prompt('nhap so thu 2: ')
+        let count2 = 0;
+        for (let i = 1; i <= b / 2; i++) {
+            if (b % i == 0) {
+                count2 = count2 + i
+            }
+        }
+        if ((count1 == b) && (count2 == a)) { alert(a + " và " + b + "  là 2 số bạn bè") }
+        else { alert("bọn e chắc là bạn bè.hhh") }
+    </script>
+</body>
+
+</html>
