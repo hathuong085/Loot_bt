@@ -9,15 +9,20 @@
 
 <body>
     <script>
-        let n = +prompt('bạn muốn ktra số có bao nhiêu chữ số');
-        let a = +prompt("nhập số bạn muốn ktra")
-        let m = a;
+        let n=0;
+        let a = +prompt("nhập số bạn muốn ktra");
+        let m=c=a;
         let tong = 0;
         let b;
+        while (c>=10){
+            c=c/10;
+            n+=1;
+        }
+        n+=1;
         while (a > 0) {
             let lt = 1;
             b = a % 10;
-            for (let i = 1; i <= n; i++) { lt = lt * b }
+            lt=Math.pow(b,n)
             tong = tong + lt;
             a = (a - b) / 10;
         };
